@@ -1,0 +1,68 @@
+<!-- used tutorial for navbar from Bootstrap -->
+<!-- https://getbootstrap.com/docs/4.3/components/navbar/ -->
+
+<div class='navigation'>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="/pets">Pets</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/shop">Shop</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/minigame">Minigame</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/logout">Logout</a>
+  </li>
+</ul>
+</div>
+
+<div class="petBox">
+	<div class="kawaii" id="kitterpillar">
+		Kitterpillar
+		<img src="/img/kitterpillar.png">
+	</div>
+	<div class="kawaii" id="witch">
+		Witchbunny
+		<img src="/img/witch.png">
+	</div>
+	<div class="kawaii" id="aquaCat">
+		AquaCat
+		<img src="/img/rainbowCat.png">
+	</div>
+	<br>
+	<div class="kawaii"id="phoenix">
+		Butterdee
+		<img src="/img/phoenix.png">
+	</div>
+	<div class="kawaii" id="hamster">
+		Hamoo
+		<img src="img/hamster.png">
+	</div>
+	<div class="kawaii" id="birdie">
+		LightPhee
+		<img src="img/birdie.png">
+	</div>
+</div>
+
+<div class="createPet">
+	<form id="makePet" method="POST" action="/createPet">
+	  <div class="form-group">
+	    <label for="Name">Name</label>
+	    <input type="text" class="form-control" name="name" placeholder="name">
+	  </div>
+	  <div class="form-group">
+	    <label for="PetType">Pet type</label>
+	    <select class="form-control" name="type">
+	      <option value="Kitterpillar">Kitterpillar</option>
+	      <option value="Witchbunny">Witchbunny</option>
+	      <option value="AquaCat">AquaCat</option>
+	      <option value="Butterdee">Butterdee</option>
+	      <option value="Hamoo">Hamoo</option>
+	      <option value="LightPhee">LightPhee</option>
+	    </select>
+	  </div>
+	  <button class="btn btn-primary" type="submit">Adopt!</button>
+	</form>
+</div>

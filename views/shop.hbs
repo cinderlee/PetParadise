@@ -1,0 +1,68 @@
+<!-- used tutorial for navbar from Bootstrap -->
+<!-- https://getbootstrap.com/docs/4.3/components/navbar/ -->
+<div class='navigation'>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="/pets">Pets</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/shop">Shop</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/minigame">Minigame</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/logout">Logout</a>
+  </li>
+</ul>
+</div>
+
+<div class="foodBox">
+  <div class="kawaii" id="cupcake">
+    Cupcake - 10 tokens
+    <img src="/img/cupcake.png">
+  </div>
+  <div class="kawaii" id="flan">
+    Flan - 30 tokens
+    <img src="/img/flan.png">
+  </div>
+  <br>
+  <div class="kawaii" id="pudding">
+    Pudding - 30 tokens
+    <img src="/img/pudding.png">
+  </div>
+  <div class="kawaii"id="macaron">
+    Macaron - 50 tokens
+    <img src="/img/macaron.png">
+  </div>
+</div>
+
+<div class='shop'> 
+    Your wallet: {{wallet}} tokens  
+	<form method="POST" action="/shop">
+    <div class="form-group">
+      <input type="hidden" name="wallet" value={{wallet}}>
+      <select class="form-control" name="food">
+        <option value="cupcake">Cupcake - 10 tokens</option>
+        <option value="flan">Flan - 30 tokens</option>
+        <option value="pudding">Pudding - 30 tokens</option>
+        <option value="macaron">Macaron - 50 tokens</option>
+      </select>
+      Quantity:<input type="number" name="qty" min="1" required>
+    </div>
+    <button class="btn btn-primary" type="submit">Buy!</button>
+  </form>
+
+  <br>
+  {{#if error}}
+    {{error}}
+  {{/if}}
+</div>
+<div class='inventory'>
+  Current inventory:
+  <br>
+  {{#each foods}}
+    {{this.name}} - {{this.quantity}}
+    <br>
+  {{/each}}
+</div>

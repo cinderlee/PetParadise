@@ -1,0 +1,34 @@
+<!-- used tutorial from Bootstrap -->
+<!-- https://getbootstrap.com/docs/4.3/components/forms/ -->
+
+<div class="loginStuff">
+	Login
+	<form id="login" method="GET" action="/login">
+	  <div class="form-group">
+	    <label for="Username">Username</label>
+	    <input type="text" class="form-control" name="username" placeholder="username">
+	  </div>
+	  <div class="form-group">
+	    <label for="Password">Password</label>
+	    <input type="password" class="form-control" name="password" placeholder="password">
+	  </div>
+	  <button class="btn btn-primary" type="submit">Login</button>
+	</form>
+
+	Register
+	<form id="register" method="POST" action="/register">
+	  <div class="form-group">
+	    <label for="Username">Username</label>
+	    <input type="text" class="form-control" name="username" placeholder="username">
+	  </div>
+	  <div class="form-group">
+	    <label for="Password">Password</label>
+	    <input type="password" class="form-control"  name="password" placeholder="password">
+	  </div>
+	  <button class="btn btn-primary" type="submit">Register</button>
+	</form>
+
+	{{#if msg}}
+		{{msg}}
+	{{/if}}
+</div>

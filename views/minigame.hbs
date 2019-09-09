@@ -1,0 +1,46 @@
+<!-- used tutorial for navbar from Bootstrap -->
+<!-- https://getbootstrap.com/docs/4.3/components/navbar/ -->
+
+<script src="/javascripts/minigame.js"></script>
+
+<div class='navigation'>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="/pets">Pets</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/shop">Shop</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/minigame">Minigame</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/logout">Logout</a>
+  </li>
+</ul>
+</div>
+
+<div id="game">
+    <div id="problems">
+        {{#each problems as |prob|}}
+                {{firstNum}} * {{secondNum}} = 
+                <input type="number" id={{id}} name={{id}} />
+            <br />
+        {{/each}}
+
+    <button class="btn btn-primary" type="button" id="gameButton">Submit!</button>
+    </div>
+    <div id="result">
+    </div>
+</div>
+
+<div id="result">
+</div>
+
+<div id="redTwin">
+    <img src="/img/redtwin.png" />
+</div>
+
+<div id="blueTwin">
+    <img src="/img/bluetwin.png" />
+</div>

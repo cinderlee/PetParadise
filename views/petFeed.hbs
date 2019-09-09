@@ -1,0 +1,31 @@
+<!-- used tutorial for navbar from Bootstrap -->
+<!-- https://getbootstrap.com/docs/4.3/components/navbar/ -->
+
+<script src="/javascripts/petFeed.bundle.min.js"></script>
+
+<div class='navigation'>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="/pets">Pets</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/shop">Shop</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/minigame">Minigame</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/logout">Logout</a>
+  </li>
+</ul>
+</div>
+
+<div class="pets"> 
+    {{name}} - Level {{level}} - {{xp}} xp
+    <br />
+    <img id="feedPetter" src="/img/{{petUrl}}"></img>
+</div>
+
+<div id="inventoryList" class="inventoryList">
+</div>
+
