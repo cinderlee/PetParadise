@@ -114,3 +114,5 @@ An Example PetFood:
 * https://webpack.js.org/concepts - for learning how to concatenate and minify the JS files for React
 * https://getbootstrap.com/docs/4.3/getting-started/introduction/ - for navbar and forms
 * https://github.com/gruntjs/grunt-contrib-cssmin - learning how to minify css using grunt
+
+* Credits to Sarilain on DeviantArt for all the cute fluffy pet images
