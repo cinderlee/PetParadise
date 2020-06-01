@@ -17,7 +17,7 @@
     "grunt-eslint": "^22.0.0",
     "hbs": "^4.1.1",
     "mongo-sanitize": "^1.1.0",
-    "mongoose": "^5.9.10",
+    "mongoose": "^5.9.16",
     "mongoose-url-slugs": "^1.0.2",
     "npm-check-updates": "^4.1.2",
     "react": "^16.13.1",
